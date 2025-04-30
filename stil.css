@@ -50,4 +50,11 @@ button:hover {
   color: #5a3d2b;
   margin-bottom: 20px;
 }
+.descriere {
+  font-size: 1.2rem;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  color: #6e4b3a;
+}
+
 
