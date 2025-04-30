@@ -58,27 +58,39 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-  body {
-    padding: 10px;
+  h1 {
+    font-size: 1.8rem;
   }
 
   img {
-    width: 100%;
-    max-width: 300px;
+    width: 90%;
     height: auto;
   }
 
-  #stele {
-    font-size: 1.5rem;
+  p, label {
+    font-size: 1rem;
+    margin: 10px 20px;
+  }
+
+  input[type="number"] {
+    width: 60px;
+    font-size: 16px;
   }
 
   button {
-    width: 100%;
-    font-size: 18px;
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  #stele {
+    font-size: 1.8rem;
   }
 
   #mesaj {
     font-size: 1rem;
+    margin: 10px 20px;
   }
 }
 
