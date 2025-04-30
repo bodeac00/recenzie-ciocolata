@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recenzii Produse</title>
+    <style>
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 20px;
+        border: 1px solid #bbbbbb;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #fff;
+      }
+
+      .titlu {
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Recenzii Produse</h1>
+
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1512212621149-107ffe572d2f"
+        alt="Produs"
+        width="100%"
+      />
+      <h2 class="titlu">Canapea Mini</h2>
+      <div id="steluteContainer"></div>
+
+      <p>
+        Atribuie numărul de stele:
+        <input type="number" id="stelute" min="1" max="5" />
+        <button id="trimite">Trimite Recenzia!</button>
+      </p>
+    </div>
+
+    <script src="recenzii.js"></script>
+  </body>
+</html>

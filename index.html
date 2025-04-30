@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="continut"></div>
+
+    <script>
+      const mesaj1 = "Hello World!";
+      const mesaj2 = "Conținutul paginii este inserat din JavaScript.";
+
+      const htmlMesaje = `
+          <h1 style="color: blue;">${mesaj1}</h1>
+          <p>${mesaj2}</p>
+        `;
+
+      const divContinut = document.getElementById("continut");
+      divContinut.innerHTML = htmlMesaje;
+    </script>
+  </body>
+</html>
