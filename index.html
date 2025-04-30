@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Recenzie Ciocolată</title>
-    <link rel="stylesheet" href="stil.css" />
-  </head>
-  <body>
-    <h1>Recenzie ciocolata</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recenzie Ciocolată</title>
 
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chocolate_%28blue_background%29.jpg/640px-Chocolate_%28blue_background%29.jpg"
-      alt="Ciocolată"
-      width="300"
-    />
-    <p>
-      Atribuie numărul de stele:
-      <input type="number" id="stelute" min="1" max="5" />
-      <button id="trimite">Trimite Recenzia!</button>
-    </p>
+  <meta name="description" content="O pagină de recenzii pentru ciocolată, unde utilizatorii pot atribui stele și trimite opinii." />
 
-    <div id="stele"></div>
-    <div id="mesaj"></div>
+  <link rel="stylesheet" href="stil.css" />
+</head>
+<body>
 
-    <script src="recenzie.js"></script>
-  </body>
+  <h1>Recenzie Ciocolată 🍫</h1>
+
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chocolate_%28blue_background%29.jpg/640px-Chocolate_%28blue_background%29.jpg"
+    alt="Ciocolată"
+    width="300"
+    onerror="this.src='fallback-image.jpg';"
+  />
+
+  <p>
+    <label for="stelute">Atribuie numărul de stele:</label>
+    <input type="number" id="stelute" min="1" max="5" />
+    <button id="trimite">Trimite Recenzia!</button>
+  </p>
+
+  <div id="stele"></div>
+  <div id="mesaj"></div>
+
+  <script src="recenzie.js"></script>
+</body>
 </html>
